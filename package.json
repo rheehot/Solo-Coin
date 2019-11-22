@@ -1,34 +1,31 @@
 {
   "name": "solo-coin",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "components": "^0.1.0",
-    "firebase": "^7.4.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0",
-    "styled-components": "^4.4.1"
-  },
+  "version": "1.0.0",
+  "description": "React-Express toy project",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baeharam/Solo-Coin.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "react"
+  ],
+  "author": "Haram Bae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baeharam/Solo-Coin/issues"
+  },
+  "homepage": "https://github.com/baeharam/Solo-Coin#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
   }
 }

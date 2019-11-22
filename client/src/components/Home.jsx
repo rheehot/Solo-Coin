@@ -4,9 +4,11 @@ const Home = () => {
   const [state, setState] = useState('');
 
   useEffect(() => {
-    fetch('/api/customers')
-      .then(res => res.json())
-      .then(customers => setState(customers));
+    fetch('/api')
+      .then((res) => {
+        console.log(res);
+        setState(res)
+      });
   }, []);
 
   return (
